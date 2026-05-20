@@ -1,0 +1,8 @@
+docker exec -it next-cloud-db-1 mysql -u nextcloud -p
+USE nextcloud;
+SHOW TABLES;
+SELECT * FROM oc_users;
+
+
+docker exec -it next-cloud-redis-1 redis-cli
+KEYS *
